@@ -398,7 +398,7 @@ QueryPatientData(type, 10)
       ulElement.appendChild(liElement);
       var liSpan = document.createElement("span");
       liSpan.setAttribute("class", "caret");
-      liSpan.textContent = value;
+     // liSpan.textContent = value;
       liSpan.addEventListener("click", function () {
         this.parentElement
           .querySelector(".nested")
