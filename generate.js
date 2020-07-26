@@ -392,7 +392,6 @@ QueryPatientData(type, 10)
     container.appendChild(ulElement);
 
     (fhirmed.data.entry || []).forEach(function (med) {
-      var value = med.resource.medicationCodeableConcept.text;
       var status = med.resource.status;
       var intent = med.resource.intent;
       var liElement = document.createElement("li");
