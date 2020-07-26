@@ -47,14 +47,14 @@ function getA1Cdata() {
   aElem0.setAttribute('href','#0');
   aElem0.className ='nav-link active';
   aElem0.innerHTML = 'Page0';
-  ulElem0 .appendChild(liElem0 );
+  ulElem.appendChild(liElem0 );
   let liElem1 = document.createElement('li');
   liElem1.setAttribute('class','nav-item');
   let aElem1= document.createElement('a');
   aElem1.setAttribute('href','#1');
   aElem1.className ='nav-link';
   aElem1.innerHTML = 'Page1';
-  ulElem1 .appendChild(liElem1 );
+  ulElem.appendChild(liElem1 );
   container.appendChild(ulElem);
   let tabContent0 = document.createElement('div');
   tabContent0.className='tab-content';
