@@ -57,7 +57,7 @@ function getA1Cdata() {
   ulElem1 .appendChild(liElem1 );
   container.appendChild(ulElem);
   let tabContent0 = document.createElement('div');
-  let tabContent0.className='tab-content';
+  tabContent0.className='tab-content';
   let tabPane0 = document.createElement('div');
   tabPane0.className='tab-pane fade show active';
   tabPane0.setAttribute('id','0');
@@ -70,7 +70,7 @@ function getA1Cdata() {
   tblRow0.classList.add('row');
   tabPane0.appendChild(tblRow0);tabContent0.appendChild(tabPane0);
   let tabContent1 = document.createElement('div');
-  let tabContent1.className='tab-content';
+  tabContent1.className='tab-content';
   let tabPane1 = document.createElement('div');
   tabPane1.className='tab-pane fade show active';
   tabPane1.setAttribute('id','1');
@@ -83,13 +83,15 @@ function getA1Cdata() {
   tblCell1 = document.createElement('div');tblCell1.className='col-sm-6';
   tblCell1.setAttribute('style', 'padding: 40px;');tblRow1.appendChild(tblCell1);
   displayTreeView(tblCell1,'Procedure','Text|PerformedPeriodstart|Status');;
-  tabPane1.appendChild(tblRow1);tabContent1.appendChild(tabPane1);
+  tabPane1.appendChild(tblRow1);
+  tabContent1.appendChild(tabPane1);
   tblRow1 = document.createElement('div');tblRow1.classList.add('row'); 
   tblCell1 = document.createElement('div');
   tblCell1.className='col-sm-6';
   tblCell1.setAttribute('style', 'padding: 40px;');
   tblRow1.appendChild(tblCell1);displayBarChart(tblCell1,'Observation','VITAL SIGN (BMI)');;
-  tabPane1.appendChild(tblRow1);tabContent1.appendChild(tabPane1);
+  tabPane1.appendChild(tblRow1);
+  tabContent1.appendChild(tabPane1);
 }
 
 function displayBarChart(container, type, params) {
