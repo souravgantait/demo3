@@ -70,7 +70,9 @@ function getA1Cdata() {
   tabContent0.appendChild(tabPane0);
   tblRow0 = document.createElement('div');
   tblRow0.classList.add('row');
-  tabPane0.appendChild(tblRow0);tabContent0.appendChild(tabPane0);
+  tabPane0.appendChild(tblRow0);
+  tabContent0.appendChild(tabPane0);
+  container.appendChild(tabContent0);
   let tabContent1 = document.createElement('div');
   tabContent1.className='tab-content';
   let tabPane1 = document.createElement('div');
@@ -96,9 +98,11 @@ function getA1Cdata() {
   tblCell1 = document.createElement('div');
   tblCell1.className='col-sm-6';
   tblCell1.setAttribute('style', 'padding: 40px;');
-  tblRow1.appendChild(tblCell1);displayBarChart(tblCell1,'Observation','VITAL SIGN (BMI)');;
+  tblRow1.appendChild(tblCell1);
+  displayBarChart(tblCell1,'Observation','VITAL SIGN (BMI)');;
   tabPane1.appendChild(tblRow1);
   tabContent1.appendChild(tabPane1);
+  container.appendChild(tabContent1);
 }
 
 function displayBarChart(container, type, params) {
