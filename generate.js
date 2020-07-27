@@ -52,7 +52,7 @@ function getA1Cdata() {
   //liElem0.setAttribute('class','nav-item');
   let aElem0= document.createElement('a');
   aElem0.setAttribute('data-toggle','tab');
-  aElem0.setAttribute('href','#0');
+  aElem0.setAttribute('href','#pane0');
   //aElem0.className ='nav-link active';
   aElem0.innerHTML = 'Page0';
   liElem0.appendChild(aElem0);
@@ -60,7 +60,7 @@ function getA1Cdata() {
   let liElem1 = document.createElement('li');
   //liElem1.setAttribute('class','nav-item');
   let aElem1= document.createElement('a');
-  aElem1.setAttribute('href','#1');
+  aElem1.setAttribute('href','#pane1');
   //aElem1.className ='nav-link';
   aElem0.setAttribute('data-toggle','tab');
   aElem1.innerHTML = 'Page1';
@@ -71,7 +71,7 @@ function getA1Cdata() {
   tabContent0.className='tab-content';
   let tabPane0 = document.createElement('div');
   tabPane0.className='tab-pane fade in active';
-  tabPane0.setAttribute('id','0');
+  tabPane0.setAttribute('id','pane0');
   let tblRow0=null; 
   let tblCell0=null;
   tblRow0 = document.createElement('div');
@@ -87,7 +87,7 @@ function getA1Cdata() {
   //tabContent1.className='tab-content';
   let tabPane1 = document.createElement('div');
   tabPane1.className='tab-pane fade';
-  tabPane1.setAttribute('id','1');
+  tabPane1.setAttribute('id','pane1');
   let tblRow1=null; 
   let tblCell1=null;
   tblRow1 = document.createElement('div');
