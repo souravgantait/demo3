@@ -46,7 +46,7 @@ function getA1Cdata() {
   let container = document.getElementById('containerId');
   let ulElem = document.createElement('ul');
   ulElem.setAttribute('id', 'myTab');
-  ulElem.className= 'nav nav-pills';
+  ulElem.className= 'nav nav-tabs';
   let liElem0 = document.createElement('li');
   liElem0.className ='active';
   //liElem0.setAttribute('class','nav-item');
