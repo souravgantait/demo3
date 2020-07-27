@@ -66,7 +66,8 @@ function getA1Cdata() {
   let tblRow0=null; 
   let tblCell0=null;
   tblRow0 = document.createElement('div');
-  tblRow0.classList.add('row');tabPane0.appendChild(tblRow0);
+  tblRow0.classList.add('row');
+  tabPane0.appendChild(tblRow0);
   tabContent0.appendChild(tabPane0);
   tblRow0 = document.createElement('div');
   tblRow0.classList.add('row');
@@ -76,7 +77,7 @@ function getA1Cdata() {
   let tabContent1 = document.createElement('div');
   tabContent1.className='tab-content';
   let tabPane1 = document.createElement('div');
-  tabPane1.className='tab-pane fade show active';
+  tabPane1.className='tab-pane';
   tabPane1.setAttribute('id','1');
   let tblRow1=null; 
   let tblCell1=null;
