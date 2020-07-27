@@ -1,3 +1,9 @@
+$(document).ready(function(){ 
+  $("#myTab a").click(function(e){
+      e.preventDefault();
+      $(this).tab('show');
+  });
+});
 function getA1Cdata() {
   ////////////////
   //render current patient
